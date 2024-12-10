@@ -1,0 +1,48 @@
+//arrays
+
+const myArrme= [1,2,3,4,5,6,7,8,"sourabh",'a']//arrays can be resized
+//a single array can take number char string object etc
+//shalow copy happens in rray means direct acces  to reference
+console.log(myArrme);
+console.log(myArrme[1]);
+
+const myArr = [0 , 1 , 2 , 3 , 4 , 5 ]
+
+const myArr2 = new Array(1,2,3,4)
+console.log(myArr2);
+
+//Array methods
+
+myArr.push(6)//add 6 at the end
+console.log(myArr);
+myArr.pop() //removce last  value
+myArr.unshift(9)//add 9 at first elemnt but it gives to much load to computer as we have to shift all the elemnts to the left
+myArr.shift()//remove first element from the array
+
+console.log(myArr.includes(9));//false
+console.log(myArr.indexOf(9))//-1 because there is no 9 in arrayu
+console.log(myArr.indexOf(4))//4 
+ const newArr = myArr.join()//add all the element of myArr into the String
+ console.log(newArr)
+ console.log(typeof newArr)//string
+ 
+
+
+ //slice and splice
+ //slice does not affect original array 
+ //splice affect original array 
+  
+
+  //myArr = [0,1,2,3,4,5]
+
+
+  console.log(myArr) //0,1,2,3,4,5
+  const myn = myArr.slice(1,3)//3 will be excluded
+   
+   console.log(myn)//1,2
+   
+   const mynm = myArr.splice(1,3)//3 will be included
+   console.log(mynm)//1,2,3
+   console.log(myArr) //0,4,5 means remaining elment in array will come in order and elements taken by splice will get remove from array and will be going to the array which is taking splice elemnts in this case mynm
+
+

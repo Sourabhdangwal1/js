@@ -1,0 +1,38 @@
+const marvel_heroes = ["thor","Ironman","spiderman"]
+const dc_heroes= ["superman", "flash", "batman"]
+
+// marvel_heroes.push(dc_heroes)
+// console.log(marvel_heroes);//[ 'thor', 'Ironman', 'spiderman', [ 'superman', 'flash', 'batman' ] ]
+// console.log(marvel_heroes[3][1]) //flash
+
+
+// const all_Heroes = marvel_heroes.concat(dc_heroes)//in concating we need to create new array
+// console.log(all_Heroes); 
+  /*
+[ 'thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman' ]
+    */
+
+
+  //so we will use  [... varible  ]
+  const all_Heroes = [...marvel_heroes, ...dc_heroes] //can be used for 2 or more than 2 variables
+  console.log(all_Heroes); //['thor', 'Ironman', 'spiderman', 'superman', 'flash', 'batman']
+   //this is used mostly
+
+   const another_array = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
+
+   const real_another_array = another_array.flat(Infinity)//in place of infinity we can take real depth (how much array are there)
+  console.log(real_another_array); //[1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5]
+
+  console.log();
+  console.log(Array.isArray("Hitesh")) //false
+  console.log(Array.from("Hitesh"));//convert it into array
+
+  console.log(Array.from({name:"hitesh"}));//it will give an empty array as we need to tell from where should we change this into array
+  
+  let score1 = 100
+  let score2 = 200
+  let score3 = 300
+
+  console.log(Array.of(score1, score2, score3)); //[100,200,300]
+  
+  // thanks for coming har har mahadev

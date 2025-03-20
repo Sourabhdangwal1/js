@@ -29,7 +29,7 @@ console.log(tinderUser.isLoggedIn)
 // //const obj3 = {obj1, obj2}//wrong method
 // // const obj3 = Object.assign(obj1,obj2) //obj2 will get merge in obj1
 
-// const obj3 = Object.assign({},obj1,obj2)//better way as we can have more than two objects so we assign an empty ibject first so that all object merge in object
+// const obj3 = Object.assign({},obj1,obj2)//better way as we can have more than two objects so we assign an empty object first so that all object merge in object
 
 
 

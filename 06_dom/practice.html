@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff";>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function add(chooseLang){
+  const li = document.createElement('li')
+  li.innerHTML=`${chooseLang}` 
+  document.querySelector(".language").append(li)
+    }
+    add('english')
+    console.log(add('english'))
+
+    function add2(chooseLang){
+     const li = document.createElement('li')
+
+    //  const lii = document.createTextNode(`${chooseLang} hai`)
+
+    //  li.append(lii)
+
+    // or
+
+    li.append(document.createTextNode(`${chooseLang} hai`))
+     document.querySelector('.language').appendChild(li)
+    }
+    add2("hindi")
+
+
+
+
+
+    const li = document.createElement('li')
+    li.append(document.createTextNode(`helloo`))
+    document.body.append(li)
+
+
+
+    const second = document.querySelector("li:nth-child(2)")
+    //  second.replaceWith('hindi')
+
+    // or 
+ 
+    const lio = document.createElement('li')
+    const lioo=document.createTextNode('hindi')
+    lio.append(lioo)
+    second.replaceWith(lio)
+</script>
+</html>
+
+
+
